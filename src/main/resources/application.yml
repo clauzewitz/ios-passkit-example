@@ -1,0 +1,59 @@
+server:
+  port: 8080
+
+passbook:
+  standard:
+    teamIdentifier:
+    formatVersion: 1
+    passTypeIdentifier:
+  cert:
+    certPath:
+    password:
+    wwrcPath:
+  icon:
+    name: icon
+    width: 29
+    height: 29
+    retinaName: icon@2x
+    retinaWidth: 58
+    retinaHeight: 58
+  logo:
+    name: logo
+    width: 30
+    wideWidth: 300
+    height: 30
+    retinaName: logo@2x
+    retinaWidth: 60
+    retinaWideWidth: 600
+    retinaHeight: 60
+  strip:
+    name: strip
+    width: 310
+    height: 123
+    retinaName: strip@2x
+    retinaWidth: 620
+    retinaHeight: 246
+
+# dev properties
+spring:
+  profiles: dev
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27107
+      database: demo
+      userName: demoUser
+      password: demoUser
+      auto-index-creation: true
+---
+
+# live properties
+spring:
+  profiles: live
+  data:
+    mongodb:
+      uri: mongodb://127.0.0.1:27107
+      database: demo
+      userName: demoUser
+      password: demoUser
+      auto-index-creation: true
+---

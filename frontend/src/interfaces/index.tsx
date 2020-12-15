@@ -1,0 +1,1 @@
+export type { default as iPassbook } from './passbook';

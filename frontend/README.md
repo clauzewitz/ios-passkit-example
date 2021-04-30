@@ -23,7 +23,7 @@ $ docker build --tag ios-passkit-example/:0.0.1 .
 ```
 ## 실행
 ```
-$ docker run -d -p 8090:8090 --name ios-passkit-example ios-passkit-example/:0.0.1
+$ docker run -d -p 8090:8090 --name ios-passkit-example ios-passkit-example:0.0.1
 ```
 
 # Document

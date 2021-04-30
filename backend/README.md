@@ -5,6 +5,17 @@ $ cd docker
 $ docker-compose up -d
 ```
 
+# docker
+아래의 명령어를 실행하여 Docker Image 를 생성 및 실행한다.
+## 생성
+```
+$ docker build --tag ios-passkit-example:0.0.1 .
+```
+## 실행
+```
+$ docker run -d -p 8080:8080 --name ios-passkit-example ios-passkit-example/:0.0.1
+```
+
 # Document
 [Wallet 개발자 가이드](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/index.html)  
 [PassKit Package Format 참고문서](https://developer.apple.com/library/archive/documentation/UserExperience/Reference/PassKit_Bundle/Chapters/Introduction.html)  
